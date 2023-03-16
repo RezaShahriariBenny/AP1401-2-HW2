@@ -30,7 +30,7 @@ TEST(APHW2TEST, checkremove)
     l.registerUser("ali", "123456", "ali@gmail.com");
     
     l.registerUser("rasoul", "123456", "rasoul.kh41@gmail.com");
-    l.removeUser("rasool");
+    l.removeUser("rasoul");
     EXPECT_EQ(l.users.size(), 1);
     EXPECT_EQ(l.getUser("rasoul"), nullptr);
 }
