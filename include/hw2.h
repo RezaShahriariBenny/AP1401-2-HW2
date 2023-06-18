@@ -1,12 +1,14 @@
 #include <string>
 #include <vector>
+#include <iostream>
 
 struct User{
     User(std::string name, std::string pass, std::string mail);
     ~User();
     std::string username;
-    std::string email;
     std::string password;
+    std::string email;
+    
 
     //----------------- other variables. you can add variables in this area
     };
@@ -31,7 +33,7 @@ struct Login {
 
     void changeMail(std::string username, std::string newMail);
     
-    void registerUser(std::string username, std::string password, std::string email); // function to creat a user
+    void registerUser(std::string username, std::string password, std::string email); // function to create a user
 
     void loginUser(std::string username, std::string password);
 
